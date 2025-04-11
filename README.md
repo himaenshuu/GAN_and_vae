@@ -42,21 +42,6 @@ pip install -r requirements.txt
 ## Dataset
 - Dataset: [https://www.kaggle.com/datasets/warcoder/mango-leaf-disease-dataset]
 
-The project uses a dataset of mango leaf disease images. Place your dataset in the following structure:
-```
-data/
-├── train/
-│   ├── healthy/
-│   ├── anthracnose/
-│   ├── bacterial_canker/
-│   └── powdery_mildew/
-└── test/
-    ├── healthy/
-    ├── anthracnose/
-    ├── bacterial_canker/
-    └── powdery_mildew/
-```
-
 ## Usage
 
 1. Training the models:
