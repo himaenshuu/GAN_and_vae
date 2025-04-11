@@ -1,0 +1,120 @@
+# Mango Leaf Disease Image Generation
+
+This project implements deep learning models for generating synthetic images of mango leaf diseases using Variational Autoencoder (VAE) and Generative Adversarial Network (GAN) architectures.
+
+## Project Structure
+
+```
+.
+├── data/                    # Dataset directory
+│   ├── train/              # Training images
+│   └── test/               # Test images
+├── models/                 # Model implementations
+│   ├── vae.py             # VAE model
+│   └── gan.py             # GAN model
+├── evaluation_metrics/     # Evaluation metrics
+│   ├── fid_score.py       # FID score calculation
+│   ├── ssim_score.py      # SSIM score calculation
+│   └── inception_score.py # Inception score calculation
+├── utils/                  # Utility functions
+│   └── data_utils.py      # Data loading and preprocessing
+├── train.py               # Training script
+├── requirements.txt       # Project dependencies
+└── README.md             # Project documentation
+```
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/mango-leaf-generation.git
+cd mango-leaf-generation
+```
+
+2. Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Dataset
+
+The project uses a dataset of mango leaf disease images. Place your dataset in the following structure:
+```
+data/
+├── train/
+│   ├── healthy/
+│   ├── anthracnose/
+│   ├── bacterial_canker/
+│   └── powdery_mildew/
+└── test/
+    ├── healthy/
+    ├── anthracnose/
+    ├── bacterial_canker/
+    └── powdery_mildew/
+```
+
+## Usage
+
+1. Training the models:
+```bash
+python train.py
+```
+
+The script will:
+- Train both VAE and GAN models
+- Save model checkpoints
+- Generate synthetic images
+- Calculate evaluation metrics (FID, SSIM, Inception Score)
+
+2. Model Parameters:
+- VAE: Latent dimension = 100
+- GAN: Noise dimension = 100
+- Training epochs = 500
+- Batch size = 32
+- Learning rate = 0.0002
+
+## Evaluation Metrics
+
+The project implements three evaluation metrics:
+
+1. **Fréchet Inception Distance (FID)**
+   - Measures the distance between feature distributions of real and generated images
+   - Lower scores indicate better quality
+
+2. **Structural Similarity Index (SSIM)**
+   - Measures the structural similarity between real and generated images
+   - Higher scores indicate better quality
+
+3. **Inception Score**
+   - Measures the diversity and quality of generated images
+   - Higher scores indicate better quality
+
+## Results
+
+The trained models will generate synthetic images that can be used for:
+- Data augmentation
+- Training other models
+- Visual analysis of disease patterns
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Dataset: [Source of your dataset]
+- References: [List of papers or resources used] 
