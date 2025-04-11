@@ -40,6 +40,7 @@ pip install -r requirements.txt
 ```
 
 ## Dataset
+- Dataset: [https://www.kaggle.com/datasets/warcoder/mango-leaf-disease-dataset]
 
 The project uses a dataset of mango leaf disease images. Place your dataset in the following structure:
 ```
@@ -112,6 +113,4 @@ The trained models will generate synthetic images that can be used for:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
-
-- Dataset: [https://www.kaggle.com/datasets/warcoder/mango-leaf-disease-dataset]
 - References:
