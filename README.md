@@ -1,6 +1,4 @@
-# Mango Leaf Disease Image Generation
-
-This project implements deep learning models for generating synthetic images of mango leaf diseases using Variational Autoencoder (VAE) and Generative Adversarial Network (GAN) architectures.
+# Implemented VAE and GAN on mango leaf disease dataset
 
 ## Project Structure
 
