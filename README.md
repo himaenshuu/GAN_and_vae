@@ -27,8 +27,7 @@ This project implements deep learning models for generating synthetic images of 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mango-leaf-generation.git
-cd mango-leaf-generation
+git clone https://github.com/himaenshuu/GAN_and_vae.git
 ```
 
 2. Create and activate a virtual environment:
@@ -116,5 +115,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- Dataset: [Source of your dataset]
-- References: [List of papers or resources used] 
+- Dataset: [https://www.kaggle.com/datasets/warcoder/mango-leaf-disease-dataset]
+- References:
