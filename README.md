@@ -1,26 +1,5 @@
 # Implemented VAE and GAN on mango leaf disease dataset
 
-## Project Structure
-
-```
-.
-├── data/                    # Dataset directory
-│   ├── train/              # Training images
-│   └── test/               # Test images
-├── models/                 # Model implementations
-│   ├── vae.py             # VAE model
-│   └── gan.py             # GAN model
-├── evaluation_metrics/     # Evaluation metrics
-│   ├── fid_score.py       # FID score calculation
-│   ├── ssim_score.py      # SSIM score calculation
-│   └── inception_score.py # Inception score calculation
-├── utils/                  # Utility functions
-│   └── data_utils.py      # Data loading and preprocessing
-├── train.py               # Training script
-├── requirements.txt       # Project dependencies
-└── README.md             # Project documentation
-```
-
 ## Installation
 
 1. Clone the repository:
